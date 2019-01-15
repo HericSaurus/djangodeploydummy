@@ -1,0 +1,14 @@
+{% extends "core/base.html" %}
+
+{% block content %}
+<h1>This is a deploy dummy</h1>
+
+
+{% for post in posts %}
+    <div>    
+        <h2><a class="article-title" >{{ objects.title }}</a></h2>
+        <p class="article-content">{{ objects.content }}</p>
+    </div>
+{% endfor %}
+
+{% endblock %}
